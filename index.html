@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <link rel="icon" type="image/x-icon" href="scoreboardicon.jpg">
+        
+         <title>Game Scoreboard</title> 
+         
+         <link rel="stylesheet" href="index.css">
+      
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <h3 class="text">HOME</h3>
+                <h2 id="home-score" class="score">0</h2>
+                <button id="home-score-btn-1" class="scoreBtn" onclick="increaseHomeScoreOne()">+1</button>
+                <button id="home-score-btn-2" class="scoreBtn" onclick="increaseHomeScoreTwo()">+2</button>
+                <button id="home-score-btn-3" class="scoreBtn" onclick="increaseHomeScoreThree()">+3</button> 
+             
+               
+            </div>
+
+            <div class="column">
+                <div class="timeContainer">
+                    <h3 class="text">Timer</h3>
+                    <div class="timeDisplay">00:00:00</div>
+                    <button id="startBtn" class="timerBtn">Start</button>
+                    <button id="pauseBtn" class="timerBtn">Pause</button>
+                    <button id="resetBtn" class="timerBtn">Reset</button>
+                    <h4 class="text">Period</h4>
+                    <div   id="periodBtn" class="periodDisplay">0</div>
+                    <button class="periodBtn" onclick="increasePeriodBtnOne()"> +</button>
+                    <button id="periodResetBtn" class="periodBtn" onclick="periodReset()">Reset</button>
+                   
+                </div> 
+                <!-- <div class="column">
+                    <div class="timeContainer">
+                        <h3 class="text">Timer</h3>
+                        <div class="timeDisplay"><span id="minute">00</span>:<span id="second">00</span>:<span id="tens">00</span></div>
+                        <button id="startBtn" class="timerBtn">Start</button>
+                        <button id="pauseBtn" class="timerBtn">Pause</button>
+                        <button id="resetBtn" class="timerBtn">Reset</button>
+                        <h4 class="text">Period</h4>
+                        <div   id="period-btn" class="periodDisplay">0</div>
+                        <button class="periodBtn" onclick="increasePeriodBtnOne()">+</button>
+                        <button id="periodResetBtn" class="periodBtn" onclick="periodReset()"></button> -->
+                        
+                
+            
+                
+            </div>
+
+            <div class="column">
+                <h3 class="text">GUEST</h3>
+                <h2 id="guest-score" class="score">0</h2>
+                <div>
+                    <button id="guest-score-btn-1" class="scoreBtn" onclick="increaseGuestScoreOne()">+1</button>
+                    <button id="guest-score-btn-2" class="scoreBtn" onclick="increaseGuestScoreTwo()">+2</button>
+                    <button id="guest-score-btn-3" class="scoreBtn" onclick="increaseGuestScoreThree()">+3</button> 
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="footer">Made by Kristen Seog</a></p>
+            <p class="footer">Website made as part of the JavaScript Course provided by <a href="https://scrimba.com/">Scrimba</a></p>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
